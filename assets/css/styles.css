@@ -1,0 +1,64 @@
+body {
+  background-color: white;
+}
+.imgProfile {
+  width: 10%;
+  border-radius: 100px;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: #751b3f;
+  color: #ffffff;
+  display: block;
+}
+
+#About {
+  text-align: center;
+}
+
+nav {
+  color: var(--dark-blue);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#projects {
+  flex: 1;
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
