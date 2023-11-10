@@ -17,37 +17,76 @@ header {
 #About {
   text-align: center;
 }
+h2 {
+  text-align: center;
+  background-color: #751b3f;
+  color: white;
+  padding: 20px;
+}
 
 nav {
   color: var(--dark-blue);
-  padding: 14px 20px;
+  padding: 14px 50px;
   text-decoration: none;
   text-align: center;
 }
+a {
+  padding: 20px;
+}
 
+.products {
+  flex: 1;
+  background-color: var(--white);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.boxes {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(1.5 deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+.box {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+.box > p {
+  text-align: center;
+}
 .card {
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
-
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
 }
 
-div.gallery img {
-  width: 50%;
-  height: auto;
-  display: inline-block;
+.card > header {
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
 }
 
-div.desc {
-  padding: 15px;
+.card > p {
   text-align: center;
 }
-* {
-  box-sizing: border-box;
+
+.card > img {
+  width: 100%;
 }
 
 .footer {
